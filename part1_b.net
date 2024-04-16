@@ -5,7 +5,7 @@ M1 drain gate 0 0 NMOS
 .model NMOS NMOS
 .model PMOS PMOS
 .lib C:\users\jkmunson\AppData\Local\LTspice\lib\cmp\standard.mos
-.model nmos NMOS (kp=100u, vt0=0.5, l=0.18, w=.36u)
+.model nmos NMOS (kp=100u, vt0=0.5, l=0.18u, w=.36u)
 .dc VGS 0 10 0.01
 .backanno
 .end
