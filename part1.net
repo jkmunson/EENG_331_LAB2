@@ -1,0 +1,11 @@
+* Z:\home\jkmunson\workspace\sp24\EENG_331_LAB2\part1.asc
+M1 drain gate 0 0 NMOS
+VGS gate 0 10
+VDS drain 0 10
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\jkmunson\AppData\Local\LTspice\lib\cmp\standard.mos
+.model nmos NMOS (kp=100u, vt0=0.5, L=0.18u, w=0.36u)
+.dc VDS 0 10 0.01
+.backanno
+.end
