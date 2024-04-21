@@ -1,0 +1,12 @@
+* Z:\home\jkmunson\workspace\sp24\EENG_331_LAB2\part3_a_vgs_sweep.asc
+VGS gate 0 7
+VDS drain 0 8
+M1 drain gate 0 0 NMOS
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\jkmunson\AppData\Local\LTspice\lib\cmp\standard.mos
+.model nmos NMOS (kp=100u, vt0=0.5, l={x}, w=.36u)
+.dc VGS 0 10 0.01
+.step param X list .09u .13u .2u .3u .6u
+.backanno
+.end
